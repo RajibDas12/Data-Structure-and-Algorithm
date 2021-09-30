@@ -8,8 +8,32 @@
 <h1>Basic Data Structure &amp; Algorithms</h1>
 <h3>Data Structures :</h3>
 <p>Arrangement of data so that they can be used efficiently.</p>
+<h3>Algorithms :</h3>
+<p>Sequence of steps on data using efficient data structure to solve a given problem.</p>
+<hr />
+<h2>Other Tech Terminology :</h2>
+<h3>Database :</h3>
+<p>Collection of information in permanent storage for faster retreival and updation.</p>
+<h3>Data Warehousing :</h3>
+<p>Management of huge amount of legacy data for better analysis.</p>
+<h3>Big Data :</h3>
+<p>Analysis of too large or complex data which can not be dealt with tech traditional data processing application.</p>
 <hr />
 <p><strong>Data Structure and Algorithms are nothing new.If you have done programming in C.</strong></p>
+<blockquote>
+<p>You have used Arrays -&gt; A data structure have same sequence of processing stps to solve a problem -&gt; Algorithm.</p>
+</blockquote>
+<hr />
+<h2>Memory Layout of C Programs :</h2>
+<p>When the program starts, it's code is copied to the main memory.
+
+Stack holds the memory occupied by the functions.
+
+Heap contains the data which is requested by the program as dynamic memory.
+
+Initialized and uninitialized data segments hold initialized and uninitialized global variables respectively.
+</p>
+
 <hr />
 <h2>Time Complexity &amp; Big O Notation :</h2>
 <p>Time complexity is the structure study of efficiency of algorithms.</p>
@@ -26,12 +50,44 @@
 <li>Big omega notation</li>
 <li>Big theta notation</li>
 </ol>
+<h3>Big oh notation :</h3>
+<p>Big oh notation is used to describe asymptotic upper bound.</p>
+<p>Mathematically, if f(n) describes running time of an alforithm; f(n) is O(g(n)) if there exist positive constants C and n0 such that </p>
+<blockquote>
+<p>O &lt;= f(n) &lt;= c g(n)
+......................for all n &gt;= n0</p>
+</blockquote>
+<h3>Big omega notation :</h3>
+<p>Just like O notation provides an asymptotic uper bound, omega notation provides asymtotic lower bound.
+Let f(n) define running time of an algorithms.</p>
+<p>f(n) is said to be omega(g n) if there exists positive constants C and n0 such that </p>
+<blockquote>
+<p>O &lt;= c g(n) &lt;= f(n).......................for all n &gt;= n0</p>
+</blockquote>
+<h3>Big theta notation :</h3>
+<p>Let f(n) define running time of an algorithms.</p>
+<p>f(n) is said to be theta(g n) if f(n) is O(g(n)) and f(n) is theta(g(n))</p>
+<p>Mathematically,</p>
+<blockquote>
+<p>O &lt;= f(n) &lt;= c1 g(n)</p>
+<p>O &lt;= c2 g(n) &lt;= f(n)</p>
+</blockquote>
+<p>Merging both the equations, we get :</p>
+<blockquote>
+<p>O &lt;= c2 g(n) &lt;= f(n) &lt;= c1 g(n)</p>
+</blockquote>
+<p>The equation simply means there exist positive constants c1 and c2 such that f(n) is sanduiched between c2 g(n) and c1 g(n).</p>
 <hr />
 <blockquote>
 <p>Which one of these to use ?</p>
 <blockquote>
 <p>Since Big theta gives a better picture of runtime for a given algorithm.Most of the interviewers expect you to provide an answer in terms of Big theta when they say "<strong>order of</strong>".</p>
 </blockquote>
+</blockquote>
+<hr />
+<h3>Increasing order of common runtimes :</h3>
+<blockquote>
+<p>1 &lt; log n &lt; n &lt; n logn &lt; n2 &lt; n3 &lt; 2n &lt; nn</p>
 </blockquote>
 
 </body>
